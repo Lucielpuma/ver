@@ -12,7 +12,7 @@ class Integer{
 int  main(){
     Integer a;
     cout<<a.val<<endl;
-    Integer arr[3];
+    Integer arr[3];//?
 
     for(Integer a:arr){
         cout<<a.val<<endl;}

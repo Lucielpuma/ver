@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>// pedir codigo   
 using namespace std;
 
 
@@ -7,11 +7,13 @@ int main() {
     cout << "how many items? ";
     cin >> numItems;
     int *arr = new int[numItems];
-    for (int i = 0; i < numItems; ++i) {
-    cout << "enter item " << i << ": ";
-    cin >> arr[i];
+    for (int i = 0; i < numItems; i++, arr++) {
+        cout << "enter item " << i << ": ";
+        
+        cin >> *arr ;
     }
-    for (int i = 0; i < numItems; ++i) {
+    arr-=numItems;
+    for (int i = 0; i < numItems; i++, arr++) {
     cout <<arr[i]<<endl; ;
     }
     delete[] arr;
